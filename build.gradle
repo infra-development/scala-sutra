@@ -1,0 +1,20 @@
+plugins {
+    id 'scala'
+}
+
+group = 'com.vidhyoday'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation("org.scala-lang:scala3-library_$scala_short:$scala_version")
+    testImplementation("org.scalatest:scalatest_$scala_short:$scala_test_version")
+    testImplementation("junit:junit:$junit_version")
+}
+
+test {
+    useJUnitPlatform()
+}
