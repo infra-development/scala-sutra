@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns="urn:iso:std:iso:20022:tech:xsd:pacs.008.001.08">
+    <FIToFICstmrCdtTrf>
+        <GrpHdr>
+            <MsgId>ABC123456</MsgId>
+            <CreDtTm>2025-07-20T10:15:30</CreDtTm>
+        </GrpHdr>
+    </FIToFICstmrCdtTrf>
+</Document>

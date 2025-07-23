@@ -11,6 +11,7 @@ repositories {
 
 dependencies {
     implementation("org.scala-lang:scala3-library_$scala_short:$scala_version")
+    implementation("org.scala-lang.modules:scala-xml_$scala_short:$scala_xml_version")
     testImplementation("org.scalatest:scalatest_$scala_short:$scala_test_version")
     testImplementation("junit:junit:$junit_version")
 }
