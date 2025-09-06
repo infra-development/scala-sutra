@@ -29,3 +29,13 @@ object FileChannel extends Channel {
 }
 
 FileChannel.write("world")
+
+case class Switch(isOn: Boolean)
+// Companion object is best place to put implicit instances
+object Switch {
+  implicit object SwitchByteEncoder extends ByteEncoder[Switch] {
+    override def encode(obj: Switch): Array[Byte] = (if (obj.isOn) "1" else "0").getBytes
+  }
+}
+
+FileChannel.write(Switch(false))
